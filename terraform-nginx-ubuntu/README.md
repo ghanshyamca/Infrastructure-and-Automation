@@ -52,9 +52,9 @@ This project provisions a single Ubuntu 20.04 LTS EC2 instance in the default AW
    ```bash
    terraform apply
    ```
-   <img width="739" height="900" alt="image" src="https://github.com/user-attachments/assets/07c13bec-a6a9-4079-827b-c0dbfd8274a7" />
-   <img width="651" height="967" alt="image" src="https://github.com/user-attachments/assets/3e856924-d7dc-4716-a139-2162642b3bcf" />
-   <img width="719" height="770" alt="image" src="https://github.com/user-attachments/assets/089fe225-572e-49e3-9b47-8544600f3031" />
+   <img width="1236" height="972" alt="image" src="https://github.com/user-attachments/assets/849853db-b148-4080-bfd7-b5ce49767425" />
+   <img width="1134" height="963" alt="image" src="https://github.com/user-attachments/assets/5646a240-f4b0-4ffc-87da-0972ed4d4216" />
+   <img width="1133" height="971" alt="image" src="https://github.com/user-attachments/assets/efdc22a7-012c-406d-a901-2792e63a203e" />
    <img width="1920" height="2107" alt="image" src="https://github.com/user-attachments/assets/48f02f2d-047b-427e-951b-ab50c67aaafd" />
 
 6. After apply completes, open the `public_ip` output in your browser to confirm Nginx is serving the custom page.
