@@ -34,44 +34,42 @@ This project provisions a single Ubuntu 20.04 LTS EC2 instance in the default AW
    ```bash
    terraform init
    ```
+   <img width="1249" height="463" alt="image" src="https://github.com/user-attachments/assets/1951d7d1-d521-4730-bb0c-680f6120d121" />
+
 
 3. Review the execution plan:
 
    ```bash
    terraform plan
    ```
+<img width="1916" height="983" alt="image" src="https://github.com/user-attachments/assets/b39ec0bc-eb86-46f1-8b03-bd50ca390151" />
+<img width="1914" height="1012" alt="image" src="https://github.com/user-attachments/assets/195b5011-1135-4d7f-a4ac-1e0a3894f9b7" />
+<img width="1899" height="999" alt="image" src="https://github.com/user-attachments/assets/595ccc5e-577a-410b-917b-caa6ed27c490" />
+<img width="1918" height="963" alt="image" src="https://github.com/user-attachments/assets/73103559-f321-423e-b772-da6737077a0f" />
 
 4. Apply the configuration:
 
    ```bash
    terraform apply
    ```
+   <img width="739" height="900" alt="image" src="https://github.com/user-attachments/assets/07c13bec-a6a9-4079-827b-c0dbfd8274a7" />
+   <img width="651" height="967" alt="image" src="https://github.com/user-attachments/assets/3e856924-d7dc-4716-a139-2162642b3bcf" />
+   <img width="719" height="770" alt="image" src="https://github.com/user-attachments/assets/089fe225-572e-49e3-9b47-8544600f3031" />
+   <img width="1920" height="2107" alt="image" src="https://github.com/user-attachments/assets/48f02f2d-047b-427e-951b-ab50c67aaafd" />
 
-5. After apply completes, open the `public_ip` output in your browser to confirm Nginx is serving the custom page.
+6. After apply completes, open the `public_ip` output in your browser to confirm Nginx is serving the custom page.
+<img width="1913" height="1022" alt="image" src="https://github.com/user-attachments/assets/6949342d-2b68-41a5-8c85-a74f8db69755" />
 
-6. Remove everything when finished:
+7. Remove everything when finished:
 
    ```bash
    terraform destroy
    ```
+<img width="1128" height="938" alt="image" src="https://github.com/user-attachments/assets/9c870f3d-eb60-4a4f-b938-8ca2b2fcb233" />
+<img width="738" height="944" alt="image" src="https://github.com/user-attachments/assets/1664ab3e-4463-4026-b387-8f78f1620168" />
+<img width="1097" height="959" alt="image" src="https://github.com/user-attachments/assets/86e6e54c-b2a5-422a-a244-961dc57d1d0a" />
+<img width="898" height="623" alt="image" src="https://github.com/user-attachments/assets/46148341-10a7-4f05-a9d7-c87482e6e5b9" />
 
-## Custom HTML Page
 
-The EC2 user data script installs Nginx and replaces the default index page with:
 
-> Welcome to the Terraform-managed Nginx Server on Ubuntu
 
-## Screenshots
-
-Add screenshots of the deployed Nginx page here after running the deployment, for example:
-
-- Browser view of the custom Nginx page at the instance public IP
-- Terminal output showing `terraform apply`
-- Terminal output showing `terraform destroy`
-
-## Notes
-
-- The instance is launched in the default VPC only.
-- No extra VPC, subnet, or internet gateway is created.
-- All created resources are tagged for easier identification.
-- `terraform destroy` removes the EC2 instance and security group created by this configuration.
